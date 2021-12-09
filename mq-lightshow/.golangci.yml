@@ -1,0 +1,94 @@
+run:
+    skip-dirs:
+    - vendor
+    modules-download-mode: vendor
+
+linters:
+    enable-all: true
+    disable:
+        - dupl
+        - varnamelen
+        - wrapcheck
+        - exhaustivestruct
+        - cyclop
+        - scopelint
+        - maligned
+        - interfacer
+        - golint
+
+service:
+  golangci-lint-version: 1.43.x
+
+issues:
+    exclude-rules:
+      - text: "log is a global variable"
+        path: "mq-lightshow.go"
+        linters:
+          - gochecknoglobals
+      - text: "ex is a global variable"
+        path: "mq-lightshow.go"
+        linters:
+          - gochecknoglobals
+      - text: "log is a global variable"
+        path: "database/sqlite.go"
+        linters:
+          - gochecknoglobals
+      - text: "deviceTypes is a global variable"
+        path: "devicetypes.go"
+        linters:
+          - gochecknoglobals
+      - path: "executor.go"
+        linters:
+          - durationcheck
+      - path: "executor.go"
+        text: "ifElseChain: rewrite if-else to switch statement"
+        linters:
+          - gocritic
+      - path: "executor.go"
+        linters:
+          - goerr113
+      - text: "Shows is a global variable"
+        path: "executor.go"
+        linters:
+          - gochecknoglobals
+      - path: "logger.go"
+        text: "type assertion on error will fail on wrapped errors. Use errors.As to check for specific errors"
+        linters:
+          - errorlint
+      - path: "logger.go"
+        text: "switch on an error will fail on wrapped errors. Use errors.Is to check for specific errors"
+        linters:
+          - errorlint
+      - path: "mqtt.go"
+        text: "`if cmd == \"ON\" || cmd == \"OFF\"` has complex nested blocks (complexity: 8)"
+        linters:
+          - nestif
+      - path: "strings-to-struct.go"
+        text: "missing cases in switch of type reflect.Kind: Array, Chan, Complex128, Complex64, Func, Int16, Int8, Interface, Invalid, Map, Ptr, Slice, Struct, Uint, Uint16, Uint32, Uint64, Uint8, Uintptr, UnsafePointer"
+        linters:
+          - exhaustive
+      - path: "strings-to-struct.go"
+        linters:
+          - goerr113
+      - path: "strings-to-struct.go"
+        text: "G109: Potential Integer overflow made by strconv.Atoi result conversion to int16/32"
+        linters:
+          - gosec
+      - path: "strings-to-struct.go"
+        text: "unnecessary conversion"
+        linters:
+          - unconvert
+      - path: "strings-to-struct.go"
+        text: "ifElseChain: rewrite if-else to switch statement"
+        linters:
+          - gocritic
+      - path: "strings-to-struct.go"
+        linters:
+          - nestif
+
+linters-settings:
+    funlen:
+        lines: 108
+        statements: 70
+    gocognit:
+        min-complexity: 40

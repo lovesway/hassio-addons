@@ -1,0 +1,34 @@
+.icon-button-gear {
+  background-color: #ffffff;
+  -webkit-mask: url(../icons/gear.svg) no-repeat center;
+  mask: url(../icons/gear.svg) no-repeat center;
+  width: 16px;
+}
+
+.icon-button-execute {
+  background-color: #ffffff;
+  -webkit-mask: url(../icons/bullseye.svg) no-repeat center;
+  mask: url(../icons/bullseye.svg) no-repeat center;
+  width: 16px;
+}
+
+.icon-button-delete {
+  background-color: #ffffff;
+  -webkit-mask: url(../icons/x-square.svg) no-repeat center;
+  mask: url(../icons/x-square.svg) no-repeat center;
+  width: 16px;
+}
+
+.icon-button-edit {
+  background-color: #ffffff;
+  -webkit-mask: url(../icons/pencil.svg) no-repeat center;
+  mask: url(../icons/pencil.svg) no-repeat center;
+  width: 16px;
+}
+
+.icon-button-duplicate {
+  background-color: #ffffff;
+  -webkit-mask: url(../icons/document-diff.svg) no-repeat center;
+  mask: url(../icons/document-diff.svg) no-repeat center;
+  width: 16px;
+}
