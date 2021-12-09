@@ -1,3 +1,3 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: "Home Assistant add-on repository for Love's Way"
+name: "Love's Way Home Assistant Add-ons"
 url: 'https://github.com/lovesway/hassio-addons'
