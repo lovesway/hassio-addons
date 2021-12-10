@@ -25,6 +25,13 @@ test-cover:
 docker:
 	@echo "-[ Building for Docker ]-"
 	 docker build --build-arg BUILD_VERSION=$(VERSION) -t mq-lightshow:$(VERSION) .
+docker-all-arch:
+	@echo "-[ Building for Docker - All Architectures]-"
+	 docker buildx build --platform linux/amd64 --build-arg BUILD_VERSION=$(VERSION) -t lovesway/amd64-mq-lightshow:$(VERSION) .
+	 docker buildx build --platform linux/arm/v7 --build-arg BUILD_VERSION=$(VERSION) -t lovesway/armhf-mq-lightshow:$(VERSION) .
+	 docker buildx build --platform linux/arm/v7 --build-arg BUILD_VERSION=$(VERSION) -t lovesway/armv7-mq-lightshow:$(VERSION) .
+	 docker buildx build --platform linux/arm64 --build-arg BUILD_VERSION=$(VERSION) -t lovesway/aarch64-mq-lightshow:$(VERSION) .
+	 docker buildx build --platform linux/386 --build-arg BUILD_VERSION=$(VERSION) -t lovesway/i386-mq-lightshow:$(VERSION) .
 native:
 	@echo "-[ Building Natively ]-"
 	go build -ldflags "-X main.version=$(VERSION)"

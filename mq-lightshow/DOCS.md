@@ -1,3 +1,30 @@
+## Requirements
+In order to use this addon you'll need a few things.
+
+### MQTT Server
+We use the Mosquitto broker from Home Assistants Official add-ons. 
+You can find this in your Supervisors Add-on Store.
+You'll need to configure a username and password for MQ Light Show to use.
+
+### Tasmota Enabled Lights
+Many types of hardware can be flashed with the Tasmota firmware.
+You can find bulbs that already have Tasmota on Amazon or Aliexpress.
+https://www.aliexpress.com/wholesale?SearchText=tasmota
+
+## Installation
+Go to your Home Assistant Supervisor then go to the Add-on Store tab.
+From there you can click the drop down on the top right and select 'Repositories'.
+Add this repository: https://github.com/lovesway/hassio-addons
+
+Once you've added the repository you should be able to scroll down and find
+the MQ Light Show application under the Love's Way Home Assistant Add-ons.
+Go inside the addon and click install. After it installs you'll need to click
+the configuration tab and enter your details. You should then be able
+to start the application and open the web UI to see the interface.
+
+In the interface you'll need add your devices, create at least one scene and
+finally create a light show including one or more scenes.
+
 ## Examples
 
 ### Adding LightShows to Home Assistant

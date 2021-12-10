@@ -6,7 +6,8 @@ RUN apk update && apk add --no-cache libc-dev gcc
 WORKDIR $GOPATH/src/gitlab.local/hassio-addons/mq-lightshow/
 COPY . .
 
-RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -ldflags "-X main.version=$BUILD_VERSION -linkmode external -extldflags '-static'" -o /mq-lightshow .
+#RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -a -ldflags "-X main.version=$BUILD_VERSION -linkmode external -extldflags '-static'" -o /mq-lightshow .
+RUN CGO_ENABLED=1 go build -a -ldflags "-X main.version=$BUILD_VERSION -linkmode external -extldflags '-static'" -o /mq-lightshow .
 
 FROM scratch
 COPY --from=build /mq-lightshow /
