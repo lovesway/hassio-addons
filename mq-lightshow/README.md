@@ -18,6 +18,8 @@ automations to activate an a ranch wide RGB fade scene at sundown, at 11pm
 the lights go into predator mode to detour the hogs/predators. On weekends 
 they do a special party mode so we know it's Saturday night!
 
+### [Documentation](./DOCS.md)
+
 ### Development Notes
 This was not architected/designed and was developed out of necessity. While I did try to 
 create abstractions for things that may need to be expanded, it is not in a pristine 
