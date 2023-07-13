@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	// Sqlite3 for sql package.
+	"github.com/lovesway/hassio-addons/mq-lightshow/devicetypes"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 	_ "github.com/mattn/go-sqlite3"
-	"gitlab.local/hassio-addons/mq-lightshow/devicetypes"
-	"gitlab.local/hassio-addons/mq-lightshow/models"
 	"go.uber.org/zap"
 )
 

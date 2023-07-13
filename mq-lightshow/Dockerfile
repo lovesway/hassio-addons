@@ -2,7 +2,7 @@ ARG BUILD_VERSION
 ARG ARCH
 ARG GOOS
 ARG GOARCH
-FROM $ARCH/golang:1.17-alpine AS build
+FROM $ARCH/golang:1.20-alpine AS build
 
 RUN apk update && apk add --no-cache libc-dev gcc
 

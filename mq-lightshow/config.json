@@ -1,10 +1,10 @@
 {
   "name": "MQ Light Show",
-  "version": "0.1",
+  "version": "0.1.0",
   "slug": "mqlightshow",
   "description": "Control basic light shows via mqtt for Tasmota based led lights",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "url": "https://gitlab.local/hassio-addons/mq-lightshow",
+  "url": "https://github.com/lovesway/hassio-addons/mq-lightshow",
   "webui": "http://[HOST]:[PORT:8099]/",
   "ingress": true,
   "panel_icon": "mdi:lighthouse-on",

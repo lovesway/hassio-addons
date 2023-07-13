@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 type (

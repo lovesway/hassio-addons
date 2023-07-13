@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"gitlab.local/hassio-addons/mq-lightshow/database"
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/database"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 var (

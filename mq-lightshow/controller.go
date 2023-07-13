@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.local/hassio-addons/mq-lightshow/database"
-	"gitlab.local/hassio-addons/mq-lightshow/devicetypes"
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/database"
+	"github.com/lovesway/hassio-addons/mq-lightshow/devicetypes"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 // Controller represents the controller for the UI.

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	MQTT "github.com/eclipse/paho.mqtt.golang"
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 // MQController struct to represent a class.

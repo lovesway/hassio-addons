@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gitlab.local/hassio-addons/mq-lightshow/database"
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/database"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 // Modeler struct to represent a class.

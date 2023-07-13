@@ -3,7 +3,7 @@ package main_test
 import (
 	"testing"
 
-	main "gitlab.local/hassio-addons/mq-lightshow"
+	main "github.com/lovesway/hassio-addons/mq-lightshow"
 )
 
 func TestGetLogger(t *testing.T) {

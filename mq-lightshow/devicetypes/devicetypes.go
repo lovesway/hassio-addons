@@ -2,7 +2,7 @@
 package devicetypes
 
 import (
-	"gitlab.local/hassio-addons/mq-lightshow/models"
+	"github.com/lovesway/hassio-addons/mq-lightshow/models"
 )
 
 // DeviceTypes represents the controller for the API.
